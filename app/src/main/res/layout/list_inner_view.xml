@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:button="@drawable/check_status"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/status"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/taskText"
+        android:layout_alignParentEnd="true"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteTask"
+        android:src="@drawable/remove_icon"
+        android:background="@drawable/round_corner"
+        android:layout_marginEnd="15dp"
+        android:layout_alignTop="@+id/status"
+        android:layout_toStartOf="@+id/status"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:id="@+id/lblListItem"/>
+
+</RelativeLayout>

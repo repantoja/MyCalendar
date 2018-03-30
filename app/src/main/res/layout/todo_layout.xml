@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="16dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="16dp"
+              tools:context="com.example.admin.mycalendar.TodoActivity">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="date"
+                android:id="@+id/date"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newTask"
+                android:hint="Enter a new task"
+                android:layout_below="@+id/date"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner"
+                android:id="@+id/btnAddItem"
+                android:layout_marginEnd="22dp"
+                android:src="@drawable/add_icon"
+                android:layout_above="@+id/TaskView"
+                android:layout_alignParentEnd="true"/>
+            <ListView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TaskView"
+                android:layout_below="@+id/newTask"/>
+
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/TaskView"
+                android:id="@+id/exlistview"/>
+
+</RelativeLayout>
